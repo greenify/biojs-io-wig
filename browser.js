@@ -1,0 +1,1 @@
+biojsiowig = require('./index');

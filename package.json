@@ -1,0 +1,50 @@
+{
+  "name": "biojs-io-wig",
+  "description": "parse wig",
+  "version": "0.1.0",
+  "homepage": "https://github.com/anilthanki/biojs-io-wig",
+  "author": {
+    "name": "Anil Thanki",
+    "email": "thanki.anil@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/anilthanki/biojs-io-wig.git"
+  },
+  "bugs": {
+    "url": "https://github.com/anilthanki/biojs-io-wig/issues"
+  },
+  "licenses": [
+    {
+      "type": "Apache 2",
+      "url": "https://github.com/anilthanki/biojs-io-wig/blob/master/LICENSE"
+    }
+  ],
+  "main": "lib/biojs-io-wig",
+  "scripts": {
+    "test": "gulp test",
+    "build-browser": "mkdirp build; browserify browser.js -o build/biojs-io-wig.js",
+	"build-browser-min": "gulp build-browser-gzip",
+	"prepublish": "gulp",
+    "watch": "mkdirp build; watchify browser.js -o build/biojs-io-wig.js"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "browserify": "~4.2.0",
+    "chai": "^1.9.1",
+    "gulp": "^3.8.8",
+    "gulp-browserify": "^0.5.0",
+    "gulp-gzip": "0.0.8",
+    "gulp-jshint": "^1.8.4",
+    "gulp-mocha": "^1.0.0",
+    "gulp-rename": "^1.2.0",
+    "gulp-rimraf": "^0.1.0",
+    "gulp-uglify": "^1.0.1",
+    "gulp-watch": "^1.0.2",
+    "mkdirp": "^0.5.0",
+    "mocha": "~1.20.1",
+    "uglify-js": "~2.4.15",
+    "watchify": "^1.0.2"
+  },
+  "keywords": ["wig"]
+}
